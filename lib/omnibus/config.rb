@@ -54,6 +54,7 @@ module Omnibus
 
         # This is an instance method, but this is a singleton object ;)
         define_method(key) do |value = NullArgumentable::NULL|
+          puts "key: #{key.inspect}; value: #{value.inspect}"
           set_or_return(key, value, default, &block)
         end
 
