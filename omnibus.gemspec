@@ -21,7 +21,6 @@ Gem::Specification.new do |gem|
   gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency "faraday",          "~>1.10.0"
   gem.add_dependency "aws-sdk-s3",       "~> 1"
   gem.add_dependency "chef-sugar",       ">= 3.3"
   gem.add_dependency "chef-cleanroom",   ">= 1.0.4", "< 1.0.5"
